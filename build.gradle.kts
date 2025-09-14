@@ -13,11 +13,11 @@ base {
 repositories {
     maven {
         name = "meteor-maven"
-        url = uri("https://maven.meteordev.org/releases")
+        url = uri("https://maven.meteordevelopment.com/")
     }
     maven {
         name = "meteor-maven-snapshots"
-        url = uri("https://maven.meteordev.org/snapshots")
+        url = uri("https://maninmyvan.github.io/meteor-archive/maven/releases")
     }
 
     maven {
@@ -33,11 +33,11 @@ repositories {
         modImplementation("net.fabricmc:fabric-loader:${properties["loader_version"] as String}")
 
         // Meteor
-        modImplementation("meteordevelopment:meteor-client:${properties["minecraft_version"] as String}-SNAPSHOT")
+        modImplementation("meteordevelopment:meteor-client:0.5.7-1.21.8")
 
 
         // Baritone
-        modImplementation("meteordevelopment:baritone:${properties["baritone_version"] as String}-SNAPSHOT")
+        modImplementation("cabaletta:baritone:1.21.8")
 
         implementation("com.google.code.gson:gson:2.10.1")
 
